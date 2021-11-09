@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300&display=swap');
+
+/*BODY */ 
+body{
+    margin: 3rem 0 0 0;
+    font-family: 'Red Hat Mono';
+    background-color: #101010;
+    color: #f0f0f0;
+    font-weight: 700;
+    overflow: hidden;
+}
+
+h1,h2{
+    margin: 0;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/*----- LAYOUT -----*/
+.bd-grid{
+    max-width: 1200px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.header-main{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #101010;
+}
+
+/*----- PAGES -----*/
+/*Nav*/
+.nav{
+    height: 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 768px){
+    .nav_menu {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#101010), to(#f0f0f0));
+        background-image: linear-gradient(#101010), #f0f0f0;
+        width: 100%;
+        height: 45%;
+        padding: 1.5rem;
+        border-radius: 0 0 1rem 1rem;
+        -webkit-transition: .5s;
+        transition: .5s;
+    }
+}
+
+.nav_list{
+    text-align: center;
+}
+
+.nav_item{
+    margin-bottom: 2rem;
+}
+
+.nav_link{
+    color: #f0f0f0;
+}
+
+.nav_link:hover{
+    color: #f0f0f0;
+    text-decoration: none;
+    position: relative;
+}
+
+.nav_link:hover::after{
+    position: absolute;
+    content: '';
+    width: 1.5rem;
+    height: 0.1875rem;
+    left: 0.125rem;
+    top: 2.125rem;
+    background-color: #f0f0f0;
+}
+
+.nav_logo{
+    font-size: 1rem;
+    color: #f0f0f0;
+}
+
+.l-main{
+    height: calc(100vh - 3rem);
+    background-color: #101010;
+}
+
+.home{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: max-content max-content;
+        grid-template-rows: -webkit-max-content -webkit-max-content;
+        grid-template-rows: max-content max-content;
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
+    row-gap: 2.3rem;
+    height: 100%;
+    font-weight: 700;
+}
+
+.home_biodata{
+    padding-left: 1.5rem;
+    border-left: 5px solid #f0f0f0;
+    z-index: 10;
+}
+
+.home_pressent{
+    font-size: 0.81rem;
+}
+
+.home_title{
+    font-size: 2.5rem;
+}
+
+.home_skill{
+    font-size: 1rem;
+}
+
+.home_img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 291px;
+    z-index: 1;
+}
+
+.home_social{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 1rem;
+}
+
+.home_social-icon{
+    margin-bottom: 2rem;
+    font-size: 1.33rem;
+    color: #f0f0f0;
+    cursor: pointer;
+}
+
+.home_social-icon:hover{
+    color: #b9b3b3;
+}
+
+/*----- MEDIA QUERIES -----*/
+@media screen and (min-width: 768px){
+    body{
+        margin: 0;
+    }
+    .l-main{
+        height: 100vh;
+    }
+    .nav{
+        height: 4rem;
+    }
+    .nav_list{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding-top: 0;
+    }
+    .nav_item{
+        margin-left: 3rem;
+        margin-bottom: 0;
+    }
+    .nav_link{
+        text-transform: initial;
+    }
+    .home{
+        -ms-grid-rows: max-content 20px;
+        grid-template-rows: -webkit-max-content 20px;
+        grid-template-rows: max-content 20px;
+        -ms-flex-line-pack: center;
+        align-content: center;
+    }
+    .home_biodata{
+        margin-top: 2rem;
+    }
+    .home_social{
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        padding-top: 1rem;
+        padding-bottom: 0;
+    }
+    .home_social-icon{
+        margin-right: 2rem;
+        margin-bottom: 0;
+    }
+    .home_img{
+        width: 553px;
+        right: 15%;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .bd-grid{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
