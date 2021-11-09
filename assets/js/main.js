@@ -12,5 +12,4 @@ var typed = new Typed('#typed', {
       fadeOut: true,
       loop: true
 });
-
 });
