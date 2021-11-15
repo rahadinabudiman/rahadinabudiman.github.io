@@ -6,13 +6,15 @@
     <link rel='stylesheet' href='assets/css/bulma.min.css'>
     <link rel="stylesheet" href="assets/css/newstyle.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css" />
 </head>
 
 <body>
     <header class="header-main">
         <nav class="nav bd-grid">
             <div>
-                <a href="#" class="nav_logo">R4HA</a>
+                <a href="" class="nav_logo">R4HA</a>
             </div>
             <div class="nav_menu" id="nav-menu">
                 <ul class="nav_list">
@@ -48,9 +50,18 @@
                     <div class="column is-flex">
                         <div class="column-child">
                             <div class="home">
-                                <div class="home_biodata">
-                                    <span class="home_pressent">Greetings,</span><br>
-                                    <span class="home_skill" id="typed"></span>
+                                <div class="lemmeknowu">
+                                    <h1>Introduce yourself!</h1>
+                                    <form method="POST">
+                                        <input type="text" name="namakamu" placeholder="Nama Kamu">
+                                        <button class="custom-btn btn" name="introduce">Introduce</button>
+                                    </form>
+                                    <?php
+                                        if(isset($_POST['introduce'])){
+                                            echo "Hello, ".$_POST['namakamu']."<br>";
+                                            echo "Selamat datang di halaman website ini."."<br>";
+                                        }
+                                    ?>
                                 </div>
                             </div>
                         </div>
