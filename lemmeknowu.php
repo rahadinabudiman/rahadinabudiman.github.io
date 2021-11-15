@@ -14,11 +14,11 @@
     <header class="header-main">
         <nav class="nav bd-grid">
             <div>
-                <a href="" class="nav_logo">R4HA</a>
+                <a href="newindex.html" class="nav_logo">R4HA</a>
             </div>
             <div class="nav_menu" id="nav-menu">
                 <ul class="nav_list">
-                    <li class="nav_item"><a href="newindex.html" class="nav_link">Home</a></li>
+                    <li class="nav_item"><a href="index.html" class="nav_link">Home</a></li>
                     <li class="nav_item"><a href="lemmeknowu.php" class="nav_link">Let me Know U!</a></li>
                 </ul>
             </div>
@@ -58,8 +58,13 @@
                                     </form>
                                     <?php
                                         if(isset($_POST['introduce'])){
-                                            echo "Hello, ".$_POST['namakamu']."<br>";
-                                            echo "Selamat datang di halaman website ini."."<br>";
+                                            $namakamu = $_POST['namakamu'];
+                                        }
+                                        if(!empty($_POST['namakamu'])){
+                                            echo "Hello, ".$namakamu."<br>";
+                                            echo "Senang berkenalan denganmu."."<br>";
+                                        } else{
+                                            echo "Perkenalkan diri kamu.";
                                         }
                                     ?>
                                 </div>

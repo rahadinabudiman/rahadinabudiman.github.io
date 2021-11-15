@@ -1,17 +1,14 @@
 <!DOCTYPE html>
-<html lang="id">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rahadina Budiman Sundara</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>R4HA</title>
+    <link rel='stylesheet' href='assets/css/bulma.min.css'>
+    <link rel="stylesheet" href="assets/css/newstyle.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 </head>
 
 <body>
-    <!-- HEADER -->
     <header class="header-main">
         <nav class="nav bd-grid">
             <div>
@@ -20,36 +17,55 @@
             <div class="nav_menu" id="nav-menu">
                 <ul class="nav_list">
                     <li class="nav_item"><a href="index.html" class="nav_link">Home</a></li>
-                    <li class="nav_item"><a href="lemmeknowu.html" class="nav_link">Let me Know U!</a></li>
+                    <li class="nav_item"><a href="lemmeknowu.php" class="nav_link">Let me Know U!</a></li>
                 </ul>
             </div>
         </nav>
     </header>
-
-    <!-- Main Body-->
-    <main class="l-main bd-grid">
-        <div class="home">
-            <div class="home_biodata">
-                <span class="home_pressent">Greetings,</span><br>
-                <span class="home_skill" id="typed"></span>
-            </div>
-            <div class="home_img">
-                <img src="assets/img/me.png" width="500">
-            </div>
-            <div class="home_social">
-                <a href="https://www.instagram.com/rahadinabudiman" target="_blank" class="home_social-icon">
-                    <i class='bx bxl-instagram bx-lg'></i>
-                </a>
-                <a href="https://www.github.com/rahadinabudiman" target="_blank" class="home_social-icon">
-                    <i class='bx bxl-github bx-lg'></i>
-                </a>
-                <a href="https://www.KeyzeX.com/" target="_blank" class="home_social-icon">
-                    <i class='bx bxl-blogger bx-lg'></i>
-                </a>
+    <section class="hero is-fullheight">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-3 is-flex">
+                        <div class="column-child sidebar shadow">
+                            <div class="sidebar-header has-text-centered">
+                                <div class="photo"><img src="assets/img/me.png" /></div>
+                                <h2 class="header-name">Rahadina Budiman Sundara</h2>
+                                <h5>Someday will be developer</h5>
+                                <div class="social-icons">
+                                    <a href="https://instagram.com/rahadinabudiman" target="_blank"><i
+                                            class="bx bxl-instagram bx-md"></i></a>
+                                    <a href="https://www.keyzex.com/" target="_blank"><i
+                                            class="bx bxl-blogger bx-md"></i></a>
+                                    <a href="https://github.com/rahadinabudiman" target="_blank"><i
+                                            class="bx bxl-github bx-md"></i></a>
+                                    <a href="https://www.linkedin.com/in/rahadinabudiman/" target="_blank"><i
+                                            class="bx bxl-linkedin bx-md"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-flex">
+                        <div class="column-child">
+                            <div class="home">
+                                <div class="home_biodata">
+                                    <span class="home_pressent">Greetings,</span><br>
+                                    <span class="home_skill" id="typed"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </main>
-    <!-- TYPED TEXT -->
+        <footer class="footer">
+            <div class="content has-text-centered">
+                <p>
+                    r4ha.
+                </p>
+            </div>
+        </footer>
+    </section>
     <script src="assets/js/main.js" type="text/javascript"></script>
     <script src="assets/js/typed.js" type="text/javascript"></script>
 </body>
