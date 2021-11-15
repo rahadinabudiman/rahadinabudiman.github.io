@@ -13,3 +13,13 @@ var typed = new Typed('#typed', {
       loop: true
 });
 });
+
+// active header bar
+const lokasi_sekarang = location.href;
+const menu = document.querySelectorAll('a');
+const menu_length = menu.length;
+for(let i=0;i<menu_length;i++){
+      if(menu[i].href == lokasi_sekarang){
+            menu[i].className ="active"
+      }
+}

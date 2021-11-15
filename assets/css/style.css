@@ -88,13 +88,15 @@ img{
 .nav_link{
     color: #f0f0f0;
 }
-
+a.active{
+    color: #f0f0f0;
+    text-decoration: overline;
+}
 .nav_link:hover{
     color: #f0f0f0;
     text-decoration: none;
     position: relative;
 }
-
 .nav_link:hover::after{
     position: absolute;
     content: '';
