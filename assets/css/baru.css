@@ -471,7 +471,7 @@ td {
 
 
 tr:hover {
-    color: rgb(52, 72, 114);
+    font-weight: 700;
 }
 
 .grid-container {
