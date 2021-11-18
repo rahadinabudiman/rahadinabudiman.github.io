@@ -6,20 +6,19 @@
     <link rel='stylesheet' href='assets/css/bulma.min.css'>
     <link rel="stylesheet" href="assets/css/newstyle.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css" />
 </head>
 
 <body>
     <header class="header-main">
         <nav class="nav bd-grid">
             <div>
-                <a href="newindex.html" class="nav_logo">R4HA</a>
+                <a href="#" class="nav_logo">R4HA</a>
             </div>
             <div class="nav_menu" id="nav-menu">
                 <ul class="nav_list">
                     <li class="nav_item"><a href="index.html" class="nav_link">Home</a></li>
-                    <li class="nav_item"><a href="lemmeknowu.php" class="nav_link">Let me Know U!</a></li>
+                    <li class="nav_item"><a href="aboutme.html" class="nav_link">About Me!</a></li>
+                    <li class="nav_item"><a href="lemmeknowu.html" class="nav_link">Let me Know U!</a></li>
                 </ul>
             </div>
         </nav>
@@ -50,24 +49,11 @@
                     <div class="column is-flex">
                         <div class="column-child">
                             <div class="home">
-                                <div class="lemmeknowu">
-                                    <h1>Introduce yourself!</h1>
-                                    <form method="POST">
-                                        <input type="text" name="namakamu" placeholder="Nama Kamu">
-                                        <button class="custom-btn btn" name="introduce">Introduce</button>
-                                    </form>
-                                    <?php
-                                        if(isset($_POST['introduce'])){
-                                            $namakamu = $_POST['namakamu'];
-                                        }
-                                        if(!empty($_POST['namakamu'])){
-                                            echo "Hello, ".$namakamu."<br>";
-                                            echo "Senang berkenalan denganmu."."<br>";
-                                        } else{
-                                            echo "Perkenalkan diri kamu.";
-                                        }
-                                    ?>
+                                <div class="home_biodata">
+                                    <span class="home_pressent">Greetings,</span><br>
+                                    <span class="home_skill" id="typed"></span>
                                 </div>
+
                             </div>
                         </div>
                     </div>
