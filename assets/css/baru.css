@@ -108,6 +108,12 @@ button {
     color: #f0f0f0;
 }
 
+.title-profile {
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.125;
+}
+
 .sidebar {
     background-color: #101010;
     display: flex;
@@ -169,15 +175,33 @@ button {
     margin: 20px 0 12px 0;
 }
 
-form .user-details .input-box {
-    margin-bottom: 15px;
+form .user-details .input-boxuser {
+    margin-bottom: 10px;
     width: calc(100% / 2 - 20px);
 }
+
+form .user-details .input-box {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
 
 form .input-box span.details {
     display: block;
     font-weight: 500;
     margin-bottom: 5px;
+}
+
+.user-details .input-boxuser input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
 }
 
 .user-details .input-box input {
@@ -239,6 +263,11 @@ form input[type="radio"] {
 @media(max-width: 584px) {
     .container {
         max-width: 100%;
+    }
+
+    form .user-details .input-boxuser {
+        margin-bottom: 15px;
+        width: 100%;
     }
 
     form .user-details .input-box {
@@ -428,10 +457,11 @@ table {
     width: 100%;
 }
 
+
 table,
 th,
 td {
-    border: 1px solid #101010;
+    border: 1px solid #f0f0f0;
 }
 
 th,
@@ -453,4 +483,45 @@ tr:hover {
 
 .grid-container>div {
     text-align: center;
+}
+
+.custom-select {
+    position: relative;
+    display: block;
+    max-width: 100px;
+    min-width: 500px;
+    border: 1px solid #f0f0f0;
+    background-color: #f0f0f0;
+    z-index: 10;
+}
+
+.custom-select select {
+    border: none;
+    outline: none;
+    background: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0;
+    margin: 0;
+    display: block;
+    width: 100%;
+    padding: 12px 55px 15px 15px;
+    font-size: 14px;
+    color: #101010;
+}
+
+.custom-select:after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 100%;
+    line-height: 38px;
+    content: '\2228';
+    text-align: left;
+    color: #101010;
+    font-size: 24px;
+    border-left: 1px solid #f0f0f0;
+    z-index: -1;
 }

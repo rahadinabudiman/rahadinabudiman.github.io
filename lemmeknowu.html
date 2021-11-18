@@ -18,6 +18,7 @@
                 <ul class="nav_list">
                     <li class="nav_item"><a href="index.html" class="nav_link">Home</a></li>
                     <li class="nav_item"><a href="lemmeknowu.html" class="nav_link">Let me Know U!</a></li>
+                    <li class="nav_item"><a href="class.html" class="nav_link">Class Schedule</a></li>
                 </ul>
             </div>
         </nav>
@@ -51,31 +52,35 @@
                                 <div class="terminal-output" id="terminalOutput">
                                     <div class="title">Let me know you.</div>
                                     <div class="content">
-                                        <form action="#">
+                                        <form action="#" method="POST">
+                                            <div class="user-details">
+                                                <div class="input-boxuser">
+                                                    <span class="details">Username</span>
+                                                    <input type="text" placeholder="Enter your Username" required>
+                                                </div>
+                                                <div class="input-boxuser">
+                                                    <span class="details">Password</span>
+                                                    <input type="password" placeholder="Enter your Password" required>
+                                                </div>
+                                            </div>
+                                            <div class="title-profile">Information Profile</div>
                                             <div class="user-details">
                                                 <div class="input-box">
-                                                    <span class="details">Full Name</span>
-                                                    <input type="text" placeholder="Enter your name" required>
-                                                </div>
-                                                <div class="input-box">
-                                                    <span class="details">Username</span>
-                                                    <input type="text" placeholder="Enter your username" required>
+                                                    <span class="details">Name</span>
+                                                    <input type="text" placeholder="Enter your Name" required>
                                                 </div>
                                                 <div class="input-box">
                                                     <span class="details">Email</span>
-                                                    <input type="text" placeholder="Enter your email" required>
+                                                    <input type="email" placeholder="Enter your email" required>
                                                 </div>
                                                 <div class="input-box">
-                                                    <span class="details">Phone Number</span>
+                                                    <span class="details">No Handphone</span>
                                                     <input type="text" placeholder="Enter your number" required>
                                                 </div>
                                                 <div class="input-box">
-                                                    <span class="details">Password</span>
-                                                    <input type="text" placeholder="Enter your password" required>
-                                                </div>
-                                                <div class="input-box">
-                                                    <span class="details">Confirm Password</span>
-                                                    <input type="text" placeholder="Confirm your password" required>
+                                                    <span class="details">Alamat</span>
+                                                    <textarea placeholder="Remember, be nice!" name="deskripsi"
+                                                        cols="20" rows="5" class="textarea"></textarea>
                                                 </div>
                                             </div>
                                             <div class="gender-details">
@@ -98,7 +103,19 @@
                                                     </label>
                                                 </div>
                                             </div>
-                                            <button class="custom-btn btn" name="submit">Submit</button>
+                                            <div class="input-box">
+                                                <span class="details">Quialification</span>
+                                                <label class="custom-select" for="styledSelect1">
+                                                    <select id="qualification styledSelect1" id="quialification">
+                                                        <option value="Bachelor">Bachelor</option>
+                                                        <option value="Bachelor Degree">Bachelor Degree</option>
+                                                        <option value="Master Degree">Master Degree</option>
+                                                        <option value="Doctoral Degree">Doctoral Degree</option>
+                                                    </select></label>
+                                            </div>
+                                            <button type="submit" class="custom-btn btn" name="submit"
+                                                onclick="alert('Submited')">Submit</button>
+                                            <button type="reset" class="custom-btn btn" name="reset">Reset</button>
                                         </form>
                                     </div>
                                 </div>
